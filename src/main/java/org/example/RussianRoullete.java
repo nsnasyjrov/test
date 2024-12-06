@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class RussianRoullete {
@@ -9,10 +10,14 @@ public class RussianRoullete {
 
     public static void russianRoullete() {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Выберите число: ");
+        Random rand = new Random();
+        int bullet = rand.nextInt(7);
+
+        System.out.print("Выберите число до 6: ");
         int num = scan.nextInt();
-        if (num == 5) {
-            System.out.println("Вы умерли");
+        if (num == bullet) {
+            System.out.println("Поздравляю, вы умерли!");
         }
     }
+
 }
