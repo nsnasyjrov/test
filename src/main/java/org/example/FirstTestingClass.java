@@ -1,7 +1,7 @@
 package org.example;
 
 public class FirstTestingClass {
-    void sex() {
-        System.out.println("а ты че хотел вызвать");
+    public static void main(String[] args) {
+        System.out.println("Проверяем...");
     }
 }
